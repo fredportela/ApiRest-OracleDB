@@ -12,7 +12,7 @@ oracledb.getConnection(dbconfig.config).then((conn) => {
 
 exports.listAtos = function(req, res) {
      connection
-     .execute("SELECT * FROM admlegis.ato WHERE sgl_orgao like '%FNDE%' AND IND_INTEIRO_TEOR = 'N'",
+     .execute("SELECT * FROM table",
      function(err, result)
      {
         if (err) { console.error(err); return; }
