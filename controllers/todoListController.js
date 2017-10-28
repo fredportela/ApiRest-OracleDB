@@ -10,7 +10,7 @@ oracledb.getConnection(dbconfig.config).then((conn) => {
 });
 
 
-exports.listAtos = function(req, res) {
+exports.getData = function(req, res) {
      connection
      .execute("SELECT * FROM table",
      function(err, result)
